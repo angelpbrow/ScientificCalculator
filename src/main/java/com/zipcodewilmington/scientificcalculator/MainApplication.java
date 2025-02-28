@@ -4,8 +4,10 @@ package com.zipcodewilmington.scientificcalculator;
  * Created by leon on 2/9/18.
  */
 public class MainApplication {
+  static String display = "0";
     public static void main(String[] args) {
         Console.println("Welcome to my calculator!");
+        Console.println(display);
         String s = Console.getStringInput("Enter a string");
         Integer i = Console.getIntegerInput("Enter an integer");
         Double d = Console.getDoubleInput("Enter a double.");
@@ -14,4 +16,7 @@ public class MainApplication {
         Console.println("The user input %s as a integer", i);
         Console.println("The user input %s as a d", d);
     }
+
+    // Display()
+
 }
