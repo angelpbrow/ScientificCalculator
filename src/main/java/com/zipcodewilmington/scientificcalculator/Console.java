@@ -42,6 +42,7 @@ public class Console {
     }
 
     public static void currentDisplay(String s) {
+
         println("Current total: ", s);
     }
 
@@ -75,8 +76,13 @@ public class Console {
                 break;
             case "*": answer = num1 * num2;
                 break;
-            case "/": answer = num1 / num2;
+            case "/":
+                //if (num2 == 0) {
+                //  throw new ArithmeticException("Err - Division by Zero");
+                //}
+                answer = num1 / num2;
                 break;
+           
             default:
                 throw new IllegalStateException("Unexpected value: " + operator);
         }
