@@ -11,9 +11,10 @@ public class MainApplication {
     public static void main(String[] args) {
         Console.println("Welcome to my calculator!");
         Console.currentDisplay("0");
-        Integer i = Console.getIntegerInput("Enter a number");
-        String s = Console.getStringInput("Enter an operation: add, subtract, multiply, divide");
-        Integer t = Console.getIntegerInput("Enter another number");
+        Integer i = Console.getIntegerInput("Enter a number:");
+        String s = Console.getStringInput("Enter an operation (+,-,/,*,^)");
+        Integer t = Console.getIntegerInput("Enter another number:");
+
         //Double d = Console.getDoubleInput("Enter a double.");
 
         //Console.println("The user input %s as a string", s);

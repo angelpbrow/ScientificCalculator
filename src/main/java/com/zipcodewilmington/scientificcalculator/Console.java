@@ -3,6 +3,7 @@ package com.zipcodewilmington.scientificcalculator;
 import com.sun.source.tree.SwitchTree;
 
 import java.sql.Array;
+import java.sql.SQLOutput;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -77,12 +78,13 @@ public class Console {
             case "*": answer = num1 * num2;
                 break;
             case "/":
-                //if (num2 == 0) {
-                //  throw new ArithmeticException("Err - Division by Zero");
-                //}
-                answer = num1 / num2;
+                if (num2 != 0) {
+                    answer = num1 / num2;
+                } else {
+                   answer = num1; // Error = "Error! Division by zero.";
+                }
+            case "^": answer = (int) Math.pow(num1,num2);
                 break;
-           
             default:
                 throw new IllegalStateException("Unexpected value: " + operator);
         }
@@ -91,5 +93,7 @@ public class Console {
     }
 
 
-
+    /* public static String getGreeting(String sayHello) {
+        System.out.println("Hello,");
+        return sayHello;*/
 }
