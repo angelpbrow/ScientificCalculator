@@ -28,7 +28,7 @@ public class MainApplication {
             Console.println("Welcome to my SCIENCE calculator!");
             Console.currentDisplay("0");
             Double d = Console.getDoubleInput("Enter a double:");
-            String s = Console.getStringInput("Enter an operation (Sin, Tan, Log)");
+            String s = Console.getStringInput("Enter an operation (Sin, Tan, Log, Log-1, Sin-1, Tan-1)");
 
             //Console.println("The user input %s as a string", s);
             //Console.println("The user input %s as an integer", i);
@@ -36,7 +36,11 @@ public class MainApplication {
             //Console.doCalc(d);
 //        num1 = d;
             //System.out.println(d);
-            sci.doCalc(s, d);
+            //sci.doCalc(s, d);
+            Console.currentDisplay(Double.toString(sci.doCalc(s, d)));
+            //sci.doInverseCalc(s, d);
+            Console.currentDisplay(Double.toString(sci.doInverseCalc(s, d)));
+
         } else {
             Integer i = getIntegerInput("Enter a number:");
             String s = Console.getStringInput("Enter an operation (+,-,/,*,^)");
@@ -48,8 +52,8 @@ public class MainApplication {
             //Console.println("The user input %s as an integer", i);
             //Console.println("The user input %s as a double", d);
             Console.setValues(i, t);
-            int answer = Console.doOperation(s, i, t);
-            displayString = Integer.toString(answer);
+            double answer = Console.doOperation(s, i, t);
+            displayString = Double.toString(answer);
             System.out.println(displayString);
             Console.currentDisplay(displayString);
 

@@ -38,7 +38,8 @@ public class Console {
     }
 
     public static void currentDisplay(String s) {
-
+//        String displayString = Integer.toString(s);
+////            System.out.println(displayString);
         System.out.println("Current total: "+ s);
     }
 
@@ -63,7 +64,7 @@ public class Console {
     }
 
 
-    public static int doOperation(String operator, int num1, int num2) {
+    public static double doOperation(String operator, int num1, int num2) {
         int answer;
         switch (operator) {
             case "+":
@@ -92,38 +93,38 @@ public class Console {
     }
 
 
-    public static double doCalc(String s, Double d) {
-        double result = 0;
-        //System.out.println(d);
-        //System.out.println(s);
-        //Create conditional to print out answer based on function chosen
+//    public static double doCalc(String s, Double d) {
+//        double result = 0;
+//        //System.out.println(d);
+//        //System.out.println(s);
+//        //Create conditional to print out answer based on function chosen
+//
+//        if (s.equalsIgnoreCase("Log") ) {
+//            result = Math.log(d);
+//        } else if (s.equalsIgnoreCase("Sin") ) {
+//            result = Math.sin(d);
+//        } else if (s.equalsIgnoreCase("Tan")) {
+//            result = Math.tan(d);
+//        } else result = 0;
+//
+//        System.out.println(result);
+//        return result;
+//    }
 
-        if (s.equalsIgnoreCase("Log") ) {
-            result = Math.log(d);
-        } else if (s.equalsIgnoreCase("Sin") ) {
-            result = Math.sin(d);
-        } else if (s.equalsIgnoreCase("Tan")) {
-            result = Math.tan(d);
-        } else result = 0;
-
-        System.out.println(result);
-        return result;
-    }
-
-    public static double doInverseCalc(String i, Double d) {
-        double result = 0;
-
-        if (i.equalsIgnoreCase("Log-1") ) {
-            result = Math.exp(d);
-        } else if (i.equalsIgnoreCase("Sin-1") ) {
-            result = Math.asin(d);
-        } else if (i.equalsIgnoreCase("Tan-1")) {
-            result = Math.atan(d);
-        } else result = 0;
-
-        System.out.println(result);
-        return result;
-    }
+//    public static double doInverseCalc(String i, Double d) {
+//        double result = 0;
+//
+//        if (i.equalsIgnoreCase("Log-1") ) {
+//            result = Math.exp(d);
+//        } else if (i.equalsIgnoreCase("Sin-1") ) {
+//            result = Math.asin(d);
+//        } else if (i.equalsIgnoreCase("Tan-1")) {
+//            result = Math.atan(d);
+//        } else result = 0;
+//
+//        System.out.println(result);
+//        return result;
+//    }
 
 }
 
