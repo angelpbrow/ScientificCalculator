@@ -13,8 +13,8 @@ public class ScientificCalc {
         Console.println("Welcome to my SCIENCE calculator!");
         Console.currentDisplay("0");
         Double d = Console.getDoubleInput("Enter a double:");
-        String s = Console.getStringInput("Enter an operation (Sin, Tan, Log)");
-
+        String s = Console.getStringInput("Enter an operation (Sin, Tan, Log, Sin-1, Tan-1, Log-1)");
+        String i = Console.getStringInput("Enter an operation (Sin-1, Tan-1, Log-1)");
         //Console.println("The user input %s as a string", s);
         //Console.println("The user input %s as an integer", i);
         //Console.println("The user input %s as a double", d);
@@ -22,6 +22,7 @@ public class ScientificCalc {
 //        num1 = d;
         //System.out.println(d);
         Console.doCalc(s, d);
+        Console.doInverseCalc(i, d);
     }
 
     }

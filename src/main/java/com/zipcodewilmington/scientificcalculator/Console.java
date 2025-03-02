@@ -109,6 +109,22 @@ public class Console {
         System.out.println(result);
         return result;
     }
+
+    public static double doInverseCalc(String i, Double d) {
+        double result = 0;
+
+        if (i.equalsIgnoreCase("Log-1") ) {
+            result = Math.exp(d);
+        } else if (i.equalsIgnoreCase("Sin-1") ) {
+            result = Math.asin(d);
+        } else if (i.equalsIgnoreCase("Tan-1")) {
+            result = Math.atan(d);
+        } else result = 0;
+
+        System.out.println(result);
+        return result;
+    }
+
 }
 
 
