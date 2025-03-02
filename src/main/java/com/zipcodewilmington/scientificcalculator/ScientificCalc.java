@@ -20,7 +20,7 @@ public class ScientificCalc {
         //Console.println("The user input %s as a double", d);
         //Console.doCalc(d);
 //        num1 = d;
-        System.out.println(d + s);
+        System.out.println(d);
     }
     }
 

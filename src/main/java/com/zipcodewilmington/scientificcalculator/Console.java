@@ -92,23 +92,26 @@ public class Console {
     }
 
 
-    public static void doCalc(String s, Double d) {
-      /*  int answer = 0;
-      //Create conditional to print out answer based on function chosen
-        if (s == "Log") {
-         answer = Math.log(d);
-        } else if (s == "Sin") {
-           answer = Math.sin(d);
-        } else if (s == "Tan") {
-           answer = Math.tan(d);
-         } else
-               }
-        System.out.println(answer);
-        return answer;
-*/
+    public static double doCalc(String s, Double d) {
+        double result = 0;
 
+        //Create conditional to print out answer based on function chosen
+
+        if (s == "Log") {
+            result = Math.log(d);
+        } else if (s == "Sin") {
+            result = Math.sin(d);
+        } else if (s == "Tan") {
+            result = Math.tan(d);
+        } else result = 0;
+
+        System.out.println(result);
+        return result;
     }
 }
+
+
+
 
   /*  public static int doCalc(String operator Double d) {
         int answer = 0;
