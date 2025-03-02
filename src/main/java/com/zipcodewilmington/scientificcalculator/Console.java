@@ -27,7 +27,7 @@ public class Console {
         println(prompt);
         String userInput = scanner.nextLine();
 
-       return  Integer.parseInt(userInput);
+        return Integer.parseInt(userInput);
     }
 
     public static Double getDoubleInput(String prompt) {
@@ -42,13 +42,14 @@ public class Console {
         println("Current total: ", s);
     }
 
-    public static void getFirstNumber(int s){
-       int num1 = s;
+    public static void getFirstNumber(int s) {
+        int num1 = s;
     }
 
-    public static void getSecondNumber(int s){
-       int num2 = s;
+    public static void getSecondNumber(int s) {
+        int num2 = s;
     }
+
     //set the values of two inputs
     public static void setValues(int x, int y) {
         getFirstNumber(x);
@@ -56,28 +57,32 @@ public class Console {
     }
 
 
-    public static void clearDisplay(String s){
-     // String s = " ";
-      ;
+    public static void clearDisplay(String s) {
+        // String s = " ";
+        ;
     }
 
 
-    public static int doOperation(String operator, int num1, int num2){
+    public static int doOperation(String operator, int num1, int num2) {
         int answer;
-        switch(operator){
-            case "+": answer = num1 + num2;
-            break;
-            case "-": answer = num1 - num2;
+        switch (operator) {
+            case "+":
+                answer = num1 + num2;
                 break;
-            case "*": answer = num1 * num2;
+            case "-":
+                answer = num1 - num2;
+                break;
+            case "*":
+                answer = num1 * num2;
                 break;
             case "/":
                 if (num2 != 0) {
                     answer = num1 / num2;
                 } else {
-                   answer = num1; // Error = "Error! Division by zero.";
+                    answer = num1; // Error = "Error! Division by zero.";
                 }
-            case "^": answer = (int) Math.pow(num1,num2);
+            case "^":
+                answer = (int) Math.pow(num1, num2);
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + operator);
@@ -87,9 +92,23 @@ public class Console {
     }
 
 
-    }
+    public static void doCalc(String s, Double d) {
+        int answer = 0;
+        //Create conditional to print out answer based on function chosen
+        switch (operator) {
+            case "Log": answer = Math.log(Double.parseDouble(d);
+                break;
+            case "Sin": answer = Math.sin(num1);
+            case "Tan": answer = Math.tan(toRadians(Double.parseDouble(num1)));
+        }
+        System.out.println(answer);
+        return answer;
 
-   /* public static int doCalc(String operator Double d) {
+
+    }
+}
+
+  /*  public static int doCalc(String operator Double d) {
         int answer = 0;
         //Create conditional to print out answer based on function chosen
         switch (operator) {

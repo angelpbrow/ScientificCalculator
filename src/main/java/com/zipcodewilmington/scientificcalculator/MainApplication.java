@@ -18,13 +18,14 @@ public class MainApplication {
         String s = Console.getStringInput("Enter an operation (+,-,/,*,^)");
         Integer t = getIntegerInput("Enter another number:");
 
-       // Double d = Console.getDoubleInput("Enter a double.");
+        Double d = Console.getDoubleInput("Enter a double.");
 
         //Console.println("The user input %s as a string", s);
         //Console.println("The user input %s as an integer", i);
         //Console.println("The user input %s as a double", d);
         Console.setValues(i,t);
         Console.doOperation(s, i, t);
+        Console.doCalc(s, d);
         //Console.doCalc(d);
 //        num1 = i;
 //        num2 = t;
