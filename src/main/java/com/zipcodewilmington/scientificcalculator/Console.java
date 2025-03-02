@@ -1,10 +1,5 @@
 package com.zipcodewilmington.scientificcalculator;
 
-import com.sun.source.tree.SwitchTree;
-
-import java.sql.Array;
-import java.sql.SQLOutput;
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -47,14 +42,12 @@ public class Console {
         println("Current total: ", s);
     }
 
-    public static int getFirstNumber(int s){
+    public static void getFirstNumber(int s){
        int num1 = s;
-        return num1;
     }
 
-    public static int getSecondNumber(int s){
+    public static void getSecondNumber(int s){
        int num2 = s;
-        return num2;
     }
     //set the values of two inputs
     public static void setValues(int x, int y) {
@@ -94,7 +87,28 @@ public class Console {
     }
 
 
+    }
+
+   /* public static int doCalc(String operator Double d) {
+        int answer = 0;
+        //Create conditional to print out answer based on function chosen
+        switch (operator) {
+            case "Log": answer = Math.log(Double.parseDouble(d);
+                break;
+            case "Sin": answer = Math.sin(num1);
+            case "Tan": answer = Math.tan(toRadians(Double.parseDouble(num1)));
+        }
+        System.out.println(answer);
+        return answer;
+
+
+    }
+
+
+
+
     /* public static String getGreeting(String sayHello) {
         System.out.println("Hello,");
         return sayHello;*/
-}
+
+

@@ -1,4 +1,7 @@
+
 package com.zipcodewilmington.scientificcalculator;
+
+import static com.zipcodewilmington.scientificcalculator.Console.getIntegerInput;
 
 /**
  * Created by leon on 2/9/18.
@@ -11,17 +14,18 @@ public class MainApplication {
     public static void main(String[] args) {
         Console.println("Welcome to my calculator!");
         Console.currentDisplay("0");
-        Integer i = Console.getIntegerInput("Enter a number:");
+        Integer i = getIntegerInput("Enter a number:");
         String s = Console.getStringInput("Enter an operation (+,-,/,*,^)");
-        Integer t = Console.getIntegerInput("Enter another number:");
+        Integer t = getIntegerInput("Enter another number:");
 
-        //Double d = Console.getDoubleInput("Enter a double.");
+       // Double d = Console.getDoubleInput("Enter a double.");
 
         //Console.println("The user input %s as a string", s);
         //Console.println("The user input %s as an integer", i);
         //Console.println("The user input %s as a double", d);
         Console.setValues(i,t);
         Console.doOperation(s, i, t);
+        //Console.doCalc(d);
 //        num1 = i;
 //        num2 = t;
         System.out.println(i+ t);
