@@ -13,6 +13,7 @@ public class MainApplication {
 
     public static void main(String[] args) {
         Console.println("Welcome to my calculator!");
+        Console.println("Say hi, Don't be shy!");
         Console.currentDisplay("0");
         Integer i = getIntegerInput("Enter a number:");
         String s = Console.getStringInput("Enter an operation (+,-,/,*,^)");

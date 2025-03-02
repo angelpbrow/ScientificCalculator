@@ -93,17 +93,19 @@ public class Console {
 
 
     public static void doCalc(String s, Double d) {
-        int answer = 0;
-        //Create conditional to print out answer based on function chosen
-        switch (operator) {
-            case "Log": answer = Math.log(Double.parseDouble(d);
-                break;
-            case "Sin": answer = Math.sin(num1);
-            case "Tan": answer = Math.tan(toRadians(Double.parseDouble(num1)));
-        }
+      /*  int answer = 0;
+      //Create conditional to print out answer based on function chosen
+        if (s == "Log") {
+         answer = Math.log(d);
+        } else if (s == "Sin") {
+           answer = Math.sin(d);
+        } else if (s == "Tan") {
+           answer = Math.tan(d);
+         } else
+               }
         System.out.println(answer);
         return answer;
-
+*/
 
     }
 }
