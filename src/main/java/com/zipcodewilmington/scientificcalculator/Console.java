@@ -39,7 +39,7 @@ public class Console {
 
     public static void currentDisplay(String s) {
 
-        println("Current total: ", s);
+        System.out.println("Current total: "+ s);
     }
 
     public static void getFirstNumber(int s) {
