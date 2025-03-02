@@ -20,6 +20,7 @@ public class MainApplication {
         Integer t = getIntegerInput("Enter another number:");
 
         Double d = Console.getDoubleInput("Enter a double.");
+
         //Console.println("The user input %s as a string", s);
         //Console.println("The user input %s as an integer", i);
         //Console.println("The user input %s as a double", d);
@@ -29,7 +30,7 @@ public class MainApplication {
         //Console.doCalc(d);
 //        num1 = i;
 //        num2 = t;
-        System.out.println(i+ t);
+        //System.out.println(i+ t);
         System.out.println(d);
     }
 

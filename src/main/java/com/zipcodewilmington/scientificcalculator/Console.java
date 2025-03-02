@@ -87,7 +87,7 @@ public class Console {
             default:
                 throw new IllegalStateException("Unexpected value: " + operator);
         }
-        System.out.println(answer);
+        //System.out.println(answer);
         return answer;
     }
 
