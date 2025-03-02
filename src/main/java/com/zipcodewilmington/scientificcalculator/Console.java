@@ -94,14 +94,15 @@ public class Console {
 
     public static double doCalc(String s, Double d) {
         double result = 0;
-
+        //System.out.println(d);
+        //System.out.println(s);
         //Create conditional to print out answer based on function chosen
 
-        if (s == "Log") {
+        if (s.equalsIgnoreCase("Log") ) {
             result = Math.log(d);
-        } else if (s == "Sin") {
+        } else if (s.equalsIgnoreCase("Sin") ) {
             result = Math.sin(d);
-        } else if (s == "Tan") {
+        } else if (s.equalsIgnoreCase("Tan")) {
             result = Math.tan(d);
         } else result = 0;
 

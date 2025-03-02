@@ -26,7 +26,7 @@ public class MainApplication {
         //Console.println("The user input %s as a double", d);
         Console.setValues(i,t);
         Console.doOperation(s, i, t);
-        Console.doCalc(s, d);
+
         //Console.doCalc(d);
 //        num1 = i;
 //        num2 = t;

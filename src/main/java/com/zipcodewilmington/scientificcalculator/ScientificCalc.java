@@ -20,8 +20,10 @@ public class ScientificCalc {
         //Console.println("The user input %s as a double", d);
         //Console.doCalc(d);
 //        num1 = d;
-        System.out.println(d);
+        //System.out.println(d);
+        Console.doCalc(s, d);
     }
+
     }
 
         /*Scanner scanner = new Scanner(System.in);
