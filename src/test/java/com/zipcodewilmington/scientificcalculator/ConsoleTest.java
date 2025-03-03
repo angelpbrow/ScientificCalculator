@@ -39,7 +39,7 @@ public class ConsoleTest {
     @Test
     public void test5DoOperation() {
         Console console = new Console();
-        double actual = console.doOperation("^", 10, 10);
-        assertEquals(20.00, actual, 0.001);
+        double actual = console.doOperation("^", 2, 6);
+        assertEquals(64.00, actual, 0.001);
     }
 }

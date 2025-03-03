@@ -59,11 +59,9 @@ public class Console {
     }
 
 
-    public static void clearDisplay(String s) {
-        // String s = " ";
-        ;
+    public static void clearDisplay() {
+        currentDisplay("0");
     }
-
 
     public static double doOperation(String operator, int num1, int num2) {
         double answer;

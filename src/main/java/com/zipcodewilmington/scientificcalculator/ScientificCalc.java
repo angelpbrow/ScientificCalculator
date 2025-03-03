@@ -26,8 +26,6 @@ public class ScientificCalc {
 
     public static double doCalc(String s, Double d) {
         double result = 0;
-        //System.out.println(d);
-        //System.out.println(s);
         //Create conditional to print out answer based on function chosen
 
         if (s.equalsIgnoreCase("Log") ) {
@@ -36,9 +34,12 @@ public class ScientificCalc {
             result = Math.sin(d);
         } else if (s.equalsIgnoreCase("Tan")) {
             result = Math.tan(d);
-        } else result = 0;
+        } else if (s.equalsIgnoreCase("Cos")){
+            result = Math.cos(d);
+        }
+        else result = 0;
 
-        System.out.println(result);
+        System.out.printf("%.2f%n",result);
         return result;
     }
 
@@ -51,9 +52,12 @@ public class ScientificCalc {
             result = Math.asin(d);
         } else if (i.equalsIgnoreCase("Tan-1")) {
             result = Math.atan(d);
-        } else result = 0;
+        } else if (i.equalsIgnoreCase("Cos-1")){
+            result = Math.acos(d);
+        }
+        else result = 0;
 
-        System.out.println(result);
+        System.out.printf("%.2f%n",result);
         return result;
     }
 
