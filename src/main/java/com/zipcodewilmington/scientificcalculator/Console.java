@@ -39,7 +39,7 @@ public class Console {
 
     public static String currentDisplay(String s) {
 //        String displayString = Integer.toString(s);
-////            System.out.println(displayString);
+//           System.out.println(displayString);
         System.out.println("Current total: "+ s);
         return s;
     }
@@ -66,7 +66,7 @@ public class Console {
 
 
     public static double doOperation(String operator, int num1, int num2) {
-        int answer;
+        double answer;
         switch (operator) {
             case "+":
                 answer = num1 + num2;
@@ -83,6 +83,7 @@ public class Console {
                 } else {
                     answer = num1; // Error = "Error! Division by zero.";
                 }
+                break;
             case "^":
                 answer = (int) Math.pow(num1, num2);
                 break;

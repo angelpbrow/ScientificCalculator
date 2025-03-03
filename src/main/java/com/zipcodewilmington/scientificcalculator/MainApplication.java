@@ -26,7 +26,7 @@ public class MainApplication {
             ScientificCalc sci = new ScientificCalc();
             System.out.println("the chose scientific");
             Console.println("Welcome to my SCIENCE calculator!");
-            Console.currentDisplay("0");
+            displayString = Console.currentDisplay("0");
             Double d = Console.getDoubleInput("Enter a double:");
             String s = Console.getStringInput("Enter an operation (Sin, Tan, Log, Log-1, Sin-1, Tan-1)");
 
@@ -37,10 +37,17 @@ public class MainApplication {
 //        num1 = d;
             //System.out.println(d);
             //sci.doCalc(s, d);
-            Console.currentDisplay(Double.toString(sci.doCalc(s, d)));
+            if (s.equalsIgnoreCase("sin")|| s.equalsIgnoreCase("tan") || s.equalsIgnoreCase("log") ){
+                displayString = Console.currentDisplay(Double.toString(sci.doCalc(s, d)));
+            }
+            if (s.equalsIgnoreCase("sin-1")|| s.equalsIgnoreCase("tan-1") || s.equalsIgnoreCase("log-1") ){
+                displayString = Console.currentDisplay(Double.toString(sci.doInverseCalc(s, d)));
+            }
             //sci.doInverseCalc(s, d);
 
-            Console.currentDisplay(Double.toString(sci.doInverseCalc(s, d)));
+
+
+            SwitchModes.switchUnitsMode(Double.parseDouble(displayString));
            // Memory.addToMemory(displayString);
 
         } else {
@@ -64,7 +71,7 @@ public class MainApplication {
 //        num2 = t;
             //System.out.println(i+ t);
         }
-        Memory.addToMemory(displayString);
+        //Memory.addToMemory(displayString);
     }
 
     static void calculatorPicker(){
