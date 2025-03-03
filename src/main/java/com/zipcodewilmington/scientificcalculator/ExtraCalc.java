@@ -27,15 +27,15 @@ public class ExtraCalc {
 
 //gives user option to make input positive or negative
 
-    public static int switchSign(int n) {
-        if (UserInput == "Y") {
-         //turns negative
-            return n * -1;
-        } else {
-         //turns positive
-            return n ;
-        }
-
-
-    }
+//    public static int switchSign(int n) {
+//        if (userInput == "Y") {
+//         //turns negative
+//            return n * -1;
+//        } else {
+//         //turns positive
+//            return n ;
+//        }
+//
+//
+//    }
 }
