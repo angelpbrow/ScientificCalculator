@@ -131,26 +131,9 @@ public class Console {
 
 
 
-  /*  public static int doCalc(String operator Double d) {
-        int answer = 0;
-        //Create conditional to print out answer based on function chosen
-        switch (operator) {
-            case "Log": answer = Math.log(Double.parseDouble(d);
-                break;
-            case "Sin": answer = Math.sin(num1);
-            case "Tan": answer = Math.tan(toRadians(Double.parseDouble(num1)));
-        }
-        System.out.println(answer);
-        return answer;
-
-
-    }
 
 
 
 
-    /* public static String getGreeting(String sayHello) {
-        System.out.println("Hello,");
-        return sayHello;*/
 
 
