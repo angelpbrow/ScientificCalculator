@@ -37,10 +37,11 @@ public class Console {
         return Double.parseDouble(userInput);
     }
 
-    public static void currentDisplay(String s) {
+    public static String currentDisplay(String s) {
 //        String displayString = Integer.toString(s);
 ////            System.out.println(displayString);
         System.out.println("Current total: "+ s);
+        return s;
     }
 
     public static void getFirstNumber(int s) {

@@ -39,7 +39,9 @@ public class MainApplication {
             //sci.doCalc(s, d);
             Console.currentDisplay(Double.toString(sci.doCalc(s, d)));
             //sci.doInverseCalc(s, d);
+
             Console.currentDisplay(Double.toString(sci.doInverseCalc(s, d)));
+           // Memory.addToMemory(displayString);
 
         } else {
             Integer i = getIntegerInput("Enter a number:");
@@ -56,12 +58,13 @@ public class MainApplication {
             displayString = Double.toString(answer);
             System.out.println(displayString);
             Console.currentDisplay(displayString);
-
+            //Memory.addToMemory(displayString);
             //Console.doCalc(d);
 //        num1 = i;
 //        num2 = t;
             //System.out.println(i+ t);
         }
+        Memory.addToMemory(displayString);
     }
 
     static void calculatorPicker(){
