@@ -7,24 +7,24 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class ScientificCalcTest {
 
     @Test
-    public void test5DoOperation() {
+    public void test1DoCalc() {
         Console console = new Console();
-        double actual = console.doOperation("Log", 2, 6);
-        assertEquals(64.00, actual, 0.001);
+        double actual = ScientificCalc.doCalc("Log", 2.0);
+        assertEquals(0.69, actual, 0.001);
     } @Test
-    public void test5DoOperation() {
+    public void test2DoCalc() {
         Console console = new Console();
-        double actual = console.doOperation("Sin", 2, 6);
-        assertEquals(64.00, actual, 0.001);
+        double actual = ScientificCalc.doCalc("Sin", 2.0);
+        assertEquals(0.909, actual, 0.001);
     } @Test
-    public void test5DoOperation() {
+    public void test3DoCalc() {
         Console console = new Console();
-        double actual = console.doOperation("Cos", 2, 6);
-        assertEquals(64.00, actual, 0.001);
+        double actual = ScientificCalc.doCalc("Cos", 2.0);
+        assertEquals(-0.416, actual, 0.001);
     } @Test
-    public void test5DoOperation() {
+    public void test4DoCalc() {
         Console console = new Console();
-        double actual = console.doOperation("^", 2, 6);
-        assertEquals(64.00, actual, 0.001);
+        double actual = ScientificCalc.doCalc("Tan", 2.0);
+        assertEquals(-2.185, actual, 0.001);
     }
 }

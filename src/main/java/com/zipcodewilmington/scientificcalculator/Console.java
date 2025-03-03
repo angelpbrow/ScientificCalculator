@@ -44,16 +44,16 @@ public class Console {
         return s;
     }
 
-    public static void getFirstNumber(int s) {
-        int num1 = s;
+    public static void getFirstNumber(double s) {
+        double num1 = s;
     }
 
-    public static void getSecondNumber(int s) {
-        int num2 = s;
+    public static void getSecondNumber(double s) {
+        double num2 = s;
     }
 
     //set the values of two inputs
-    public static void setValues(int x, int y) {
+    public static void setValues(double x, double y) {
         getFirstNumber(x);
         getSecondNumber(y);
     }
@@ -63,7 +63,7 @@ public class Console {
         currentDisplay("0");
     }
 
-    public static double doOperation(String operator, int num1, int num2) {
+    public static double doOperation(String operator, double num1, double num2) {
         double answer;
         switch (operator) {
             case "+":
@@ -88,7 +88,7 @@ public class Console {
             default:
                 throw new IllegalStateException("Unexpected value: " + operator);
         }
-        //System.out.println(answer);
+        System.out.println(answer);
         return answer;
     }
 
