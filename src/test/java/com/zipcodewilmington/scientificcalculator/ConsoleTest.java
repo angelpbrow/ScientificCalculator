@@ -107,9 +107,9 @@ public class ConsoleTest {
     }
 
     @Test
-    public void test6DoOperation() {
+    public void test15DoOperation() {
         Console console = new Console();
-        double actual = console.doOperation("*", 3, 6);
+        double actual = console.doOperation("^", 3, 6);
         assertEquals(18.00, actual, 0.001);
     }
 }
