@@ -1,6 +1,8 @@
 package com.zipcodewilmington.scientificcalculator;
 
 public class ExtraCalc {
+
+
     // produces the factorial of input
 
 
@@ -26,6 +28,10 @@ public class ExtraCalc {
     public static int toInverse(int n) {
         return 1 / n;
     }
+
+
+
+
 
 //gives user option to make input positive or negative
 

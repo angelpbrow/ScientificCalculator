@@ -7,7 +7,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class ConsoleTest {
 
 
-
     @Test
     public void test1DoOperation() {
         Console console = new Console();
@@ -105,5 +104,12 @@ public class ConsoleTest {
         Console console = new Console();
         double actual = console.doOperation("^", 2, 6);
         assertEquals(64.00, actual, 0.001);
+    }
+
+    @Test
+    public void test6DoOperation() {
+        Console console = new Console();
+        double actual = console.doOperation("*", 3, 6);
+        assertEquals(18.00, actual, 0.001);
     }
 }
