@@ -38,8 +38,6 @@ public class Console {
     }
 
     public static String currentDisplay(String s) {
-//        String displayString = Integer.toString(s);
-//           System.out.println(displayString);
         System.out.println("Current total: "+ s);
         return s;
     }
@@ -64,33 +62,54 @@ public class Console {
     }
 
     public static double doOperation(String operator, double num1, double num2) {
-        double answer;
         switch (operator) {
             case "+":
-                answer = num1 + num2;
-                break;
+                return add(num1,num2);
             case "-":
-                answer = num1 - num2;
-                break;
+                return subtract(num1,num2);
             case "*":
-                answer = num1 * num2;
-                break;
+                return multiply(num1,num2);
             case "/":
-                if (num2 != 0) {
-                    answer = num1 / num2;
-                } else {
-                    answer = num1; // Error = "Error! Division by zero.";
-                }
-                break;
+               return divide(num1, num2);
             case "^":
-                answer = (int) Math.pow(num1, num2);
-                break;
+                return raiseToPower(num1, num2);
+
             default:
                 throw new IllegalStateException("Unexpected value: " + operator);
         }
-        System.out.println(answer);
-        return answer;
+
     }
+
+    private static double add(double num1, double num2){
+        return num1 + num2;
+    }
+
+    private static double subtract(double num1, double num2){
+        return num1 - num2;
+    }
+
+    private static double multiply(double num1, double num2){
+        return num1 * num2;
+    }
+
+    private static double divide(double num1, double num2){
+        if (num2 != 0) {
+            return num1 / num2;
+        } else {
+            divideByZeroError(num1);
+            return num1;
+        }
+    }
+
+    private static double divideByZeroError(double num1){
+        System.out.println("Divide by zero error");
+        return (num1);
+    }
+
+    private static double raiseToPower(double num1, double num2){
+        return (int) Math.pow(num1, num2);
+    }
+
 
 
 //    public static double doCalc(String s, Double d) {
