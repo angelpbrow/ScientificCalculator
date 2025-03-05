@@ -12,6 +12,10 @@ public class Memory {
         } else if (memoryOption.equalsIgnoreCase("2")) {
 
             MainApplication.calculatorPicker();
+
+        } else {
+            System.out.println("invalid option");
+            MainApplication.calculatorPicker();
         }
 
     }

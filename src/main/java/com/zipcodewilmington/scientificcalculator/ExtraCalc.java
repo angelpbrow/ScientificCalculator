@@ -2,6 +2,8 @@ package com.zipcodewilmington.scientificcalculator;
 
 public class ExtraCalc {
     // produces the factorial of input
+
+
     public static int factorial(int n) {
 
         int result = 1, i;

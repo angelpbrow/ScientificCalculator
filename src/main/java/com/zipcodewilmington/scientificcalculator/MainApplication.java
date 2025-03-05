@@ -21,17 +21,15 @@ public class MainApplication {
             Console.currentDisplay(displayString);
         while (stayCalcing) {
             stayCalcing  = false;
-            //Console.println("Pick a calculator, (1)Standard or (2)Scientific? ");
             calculatorPicker();
             if (scientific) {
-                ScientificCalc sci = new ScientificCalc();
-                //System.out.println("You chose scientific");
+               // ScientificCalc sci = new ScientificCalc();
                 Console.println("You chose scientific");
                 Console.println("Welcome to my SCIENCE calculator!");
                 displayString = Console.currentDisplay("0");
                 Double d = Console.getDoubleInput("Enter a number:");
                 String s = Console.getStringInput("Enter an operation \n (1)Sin (2)Cos (3)Tan (4)Log \n (5)Log-1 (6)Sin-1 (7)Tan-1 (8)Cos-1 " +
-                        "\n (9)Square (10)Inverse (11)SwitchSign (12)SquareRoot");
+                        "\n (9)Square (10)Inverse (11)factorial (12)SquareRoot");
 
                 scientificMethodPicker(s, d);
                 double degreeRadiansSwitch = Console.getDoubleInput("Select your mode: (1)Deg or (2)Rad or any other key to exit");
@@ -69,10 +67,8 @@ public class MainApplication {
     }
 // Selector for which calculator to run (Scientific or Standard).
     static void calculatorPicker(){
-        //Console.println("Pick a calculator, (1)Standard or (2)Scientific? ");
+        stayCalcing = true;
         String playerInput = Console.getStringInput("Pick a calculator, (1)Standard or (2)Scientific?");
-//        Scanner sc  = new Scanner(System.in);
-//        String playerInput = sc.nextLine();
         if (playerInput.equalsIgnoreCase("1")) {
             scientific = false;
         } else if (playerInput.equalsIgnoreCase("2")) {
@@ -89,7 +85,19 @@ public class MainApplication {
             displayString = Console.currentDisplay(Double.toString(ScientificCalc.doCalc(s, d)));
         } else if (s.equalsIgnoreCase("6")|| s.equalsIgnoreCase("7") || s.equalsIgnoreCase("5")|| s.equalsIgnoreCase("8") ){
             displayString = Console.currentDisplay(Double.toString(ScientificCalc.doInverseCalc(s, d)));
-        } else {
+        } else if (s.equalsIgnoreCase("9") ){
+            displayString = Console.currentDisplay(Double.toString(ExtraCalc.square(Integer.parseInt(String.valueOf(d)))));
+        } else if (s.equalsIgnoreCase("10") ) {
+            displayString = Console.currentDisplay(Double.toString(ExtraCalc.toInverse(Integer.parseInt(String.valueOf(d)))));
+        }
+        else if (s.equalsIgnoreCase("11")) {
+            displayString = Console.currentDisplay(Double.toString(ExtraCalc.factorial(Integer.parseInt(String.valueOf(d)))));
+        }
+//        else if (s.equalsIgnoreCase("12") ) {
+//            displayString = Console.currentDisplay(Double.toString(ExtraCalc.switchSign(Integer.parseInt(String.valueOf(d)))));
+//        }
+        else {
+
             return;
         }
     }
