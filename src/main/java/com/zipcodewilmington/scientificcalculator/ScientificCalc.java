@@ -28,17 +28,18 @@ public class ScientificCalc {
         double result = 0;
         //Create conditional to print out answer based on function chosen
 
-        if (s.equalsIgnoreCase("Log") ) {
-            result = Math.log(d);
-        } else if (s.equalsIgnoreCase("Sin") ) {
+        if (s.equalsIgnoreCase("1") ) {
             result = Math.sin(d);
-        } else if (s.equalsIgnoreCase("Tan")) {
-            result = Math.tan(d);
-        } else if (s.equalsIgnoreCase("Cos")){
+        } else if (s.equalsIgnoreCase("2")){
             result = Math.cos(d);
+        } else if (s.equalsIgnoreCase("3")) {
+            result = Math.tan(d);
+        } else if (s.equalsIgnoreCase("4") ) {
+            result = Math.log(d);
         }
-        else result = 0;
-
+        else {
+            result = 0;
+        }
         System.out.printf("%.2f%n",result);
         return result;
     }
@@ -46,13 +47,13 @@ public class ScientificCalc {
     public static double doInverseCalc(String i, Double d) {
         double result = 0;
 
-        if (i.equalsIgnoreCase("Log-1") ) {
+        if (i.equalsIgnoreCase("5") ) {
             result = Math.exp(d);
-        } else if (i.equalsIgnoreCase("Sin-1") ) {
+        } else if (i.equalsIgnoreCase("6") ) {
             result = Math.asin(d);
-        } else if (i.equalsIgnoreCase("Tan-1")) {
+        } else if (i.equalsIgnoreCase("7")) {
             result = Math.atan(d);
-        } else if (i.equalsIgnoreCase("Cos-1")){
+        } else if (i.equalsIgnoreCase("8")){
             result = Math.acos(d);
         }
         else result = 0;
