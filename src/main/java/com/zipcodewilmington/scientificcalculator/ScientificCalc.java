@@ -58,7 +58,7 @@ public class ScientificCalc {
         }
         else result = 0;
 
-        System.out.printf("%.2f%n",result);
+        //System.out.printf("%.2f%n",result);
         return result;
     }
 
