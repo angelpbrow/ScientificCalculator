@@ -13,6 +13,7 @@ public class ConsoleTest {
         double actual = console.doOperation("+", 20, 10);
         assertEquals(30.00, actual, 0.001);
     }
+
     @Test
     public void test2DoOperation() {
         Console console = new Console();
@@ -110,6 +111,32 @@ public class ConsoleTest {
     public void test15DoOperation() {
         Console console = new Console();
         double actual = console.doOperation("^", 3, 6);
-        assertEquals(18.00, actual, 0.001);
+        assertEquals(729.00, actual, 0.001);
+
+
+    }
+
+    @Test
+    public void test16DoOperation() {
+        Console console = new Console();
+        double actual = console.doOperation("^", 4, 10);
+        assertEquals(1048576.00, actual, 0.001);
+
+    }
+
+    @Test
+    public void test17DoOperation() {
+        Console console = new Console();
+        double actual = console.doOperation("^", -2, 2);
+        assertEquals(4.0, actual, 0.001);
+
+    }
+
+    @Test
+    public void test18DoOperation() {
+        Console console = new Console();
+        double actual = console.doOperation("^", 3.4, 2);
+        assertEquals(11.00, actual, 0.001);
+
     }
 }
