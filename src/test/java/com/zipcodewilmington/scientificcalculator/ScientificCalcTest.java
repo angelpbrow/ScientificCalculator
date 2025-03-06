@@ -32,18 +32,19 @@ public class ScientificCalcTest {
     @Test
     public void test5DoCalc() {
         Console console = new Console();
-        double actual = ScientificCalc.doCalc("5", 2.0);
-        assertEquals(0.693, actual, 0.001);
+        double actual = ScientificCalc.doCalc("5", 4.0);
+        assertEquals(15.154, actual, 0.001);
+
     } @Test
     public void test6DoCalc() {
         Console console = new Console();
-        double actual = ScientificCalc.doCalc("6", 2.0);
-        assertEquals(0.909, actual, 0.001);
+        double actual = ScientificCalc.doCalc("6", 8.0);
+        assertEquals(-0.139, actual, 0.001);
     } @Test
     public void test7DoCalc() {
         Console console = new Console();
-        double actual = ScientificCalc.doCalc("7", 2.0);
-        assertEquals(-0.416, actual, 0.001);
+        double actual = ScientificCalc.doCalc("7", 3.0);
+        assertEquals(-0.052, actual, 0.001);
     } @Test
     public void test8DoCalc() {
         Console console = new Console();
