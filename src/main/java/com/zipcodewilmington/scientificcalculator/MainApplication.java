@@ -20,10 +20,10 @@ public class MainApplication {
             Console.println("Say hi, Don't be shy!");
             Console.currentDisplay(displayString);
         while (stayCalcing) {
-            stayCalcing  = false;
             calculatorPicker();
+            stayCalcing  = false;
             if (scientific) {
-               // ScientificCalc sci = new ScientificCalc();
+               // ScientificCalc sci = new ScientificCalc()
                 Console.println("You chose scientific");
                 Console.println("Welcome to my SCIENCE calculator!");
                 displayString = Console.currentDisplay("0");
@@ -33,19 +33,7 @@ public class MainApplication {
 
                 scientificMethodPicker(s, d);
                 double degreeRadiansSwitch = Console.getDoubleInput("Select your mode: (1)Deg or (2)Rad or any other key to exit");
-//            doubleToString(SwitchModes.switchUnitsMode(degreeRadiansSwitch));
                 displayString = Console.currentDisplay(doubleToString(SwitchModes.switchUnitsMode(degreeRadiansSwitch)));
-//
-
-//Select your mode: (1)Deg or (2)Rad or any other key to exit
-                // SwitchModes.switchUnitsMode(Double.parseDouble(displayString));
-//                String memoryOption = Console.getStringInput("Do you want to store your number to memory? \n (1) Yes (2) No");
-//                if (memoryOption.equalsIgnoreCase("1")){
-//                    Memory.addToMemory(displayString);
-//                } else if (memoryOption.equalsIgnoreCase("2")) {
-//
-//                    calculatorPicker();
-//                }
 
                 Memory.memoryPicker();
 
